@@ -1,0 +1,7 @@
+.character-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(32, 35, 41);
+}
+

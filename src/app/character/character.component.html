@@ -1,0 +1,18 @@
+<div class="character" routerLink="/details/{{character?.id}}">
+    <img class="img" [src]="character?.image" alt="character.name">
+    <div class="details">
+        <h2>{{character?.name}}</h2>
+        <div class="status">
+            <div class="status-icon"
+                [ngStyle]="{'background-color':character?.status === 'Alive' ? 'rgb(85, 204, 68)' : character?.status === 'Dead' ? 'rgb(214, 61, 46)':'' }">
+            </div>
+            {{character?.status}} - {{character?.species}}
+        </div>
+        <br>
+        <p class="title">Last known location:</p>
+        <p>{{character?.location?.name}}</p>
+        <br>
+        <p class="title">First seen in:</p>
+        <p>{{character?.origin?.name}}</p>
+    </div>
+</div>

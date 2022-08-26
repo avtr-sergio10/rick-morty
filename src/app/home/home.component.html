@@ -1,0 +1,8 @@
+<app-header></app-header>
+
+<div class="character-list">
+    <div  *ngFor="let character of characters">
+        <app-character class="character-card" [character]="character">
+        </app-character>
+    </div>
+</div>
